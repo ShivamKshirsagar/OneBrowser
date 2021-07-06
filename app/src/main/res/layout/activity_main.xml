@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:letterSpacing="0.1"
+        android:text="@string/browser_one"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgFB"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/imgAmazon"
+        app:layout_constraintTop_toBottomOf="@+id/etString"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/imgInsta"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etString"
+        app:srcCompat="@drawable/instagram" />
+
+    <ImageView
+        android:id="@+id/imgYT"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/imgInsta"
+        app:layout_constraintTop_toBottomOf="@+id/etString"
+        app:srcCompat="@drawable/youtube" />
+
+    <ImageView
+        android:id="@+id/imgGit"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/imgFB"
+        app:layout_constraintTop_toBottomOf="@+id/etString"
+        app:srcCompat="@drawable/github" />
+
+    <ImageView
+        android:id="@+id/imgAmazon"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgFB"
+        app:layout_constraintStart_toEndOf="@+id/imgYT"
+        app:layout_constraintTop_toBottomOf="@+id/etString"
+        app:srcCompat="@drawable/amezon" />
+
+    <EditText
+        android:id="@+id/etString"
+        android:layout_width="276dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/shapes"
+        android:drawableLeft="@drawable/googlemini"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center|center_vertical"
+        android:hint="Search..."
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#00BCD4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/imgSearch"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imgSearch"
+        android:layout_width="57dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/shapes"
+        app:layout_constraintStart_toEndOf="@+id/etString"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/search" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="82dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/browser" />
+
+    <WebView
+        android:id="@+id/wether"
+        android:layout_width="358dp"
+        android:layout_height="429dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFB" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
